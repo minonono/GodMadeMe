@@ -1,0 +1,12 @@
+<h1>신이 나를 만들때</h1>
+
+<% for i in 0..2 do %>
+    <div>
+    <h3><%= @text[i] %> <%= @num[i] %> </h3>
+    <% if @num[i] > 80 %>
+        <%= image_tag("god_good") %>
+    <% else %>
+        <%= image_tag("logo_god") %>
+    <% end %>
+    </div>
+<% end %>
